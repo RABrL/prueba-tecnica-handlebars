@@ -1,0 +1,44 @@
+<h1 class="title" onclick="createFormModal">Clients</h1>
+<div class="data">
+  <div class='button-box'>
+    <button class='create-user'>Create User</button>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>NIT/CC</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Phone</th>
+        <th>Available quota</th>
+        <th>Status</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody class="body">
+      {{#each clients}}
+      <tr>
+        <td>{{name}}</td>
+        <td>{{lastName}}</td>
+        <td>{{dni}}</td>
+        <td>{{address}}</td>
+        <td>{{city}}</td>
+        <td>{{phone}}</td>
+        <td>{{currentCredit}}</td>
+        {{#if isActive}}
+        <td class='success'>Active</td>
+        {{else}}
+        <td class='danger'>Inactive</td>
+        {{/if}}
+        <td class="actions">
+          <i class="fa-solid fa-pen-to-square edit"></i>
+          <i class="fa-solid fa-trash delete"></i>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  <a href="#">Show All</a>
+</div>

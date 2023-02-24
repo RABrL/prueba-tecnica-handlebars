@@ -1,0 +1,62 @@
+<h1 class="title" onclick="createFormModal">New Credit</h1>
+<div class="form-content credit">
+  <i class="fa-solid fa-xmark close"></i>
+  <form method="PUT">
+    <div class="left">
+      <div>
+        <div class="input-box">
+          <label for="name">Pagare No:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name">
+        </div>
+        <div class="input-box">
+          <label for="lastName">Cuotas Mensuales:</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Your Name">
+        </div>
+      </div>
+      <div>
+        <div class="input-box">
+          <label for="dni">Monto del credito:</label>
+          <input type="text" id="dni" name="dni" placeholder="Your DNI">
+        </div>
+        <div class="input-box">
+          <label for="address">Cedula del cliente:</label>
+          <input type="text" id="address" name="address" placeholder="Your Address">
+        </div>
+      </div>
+      <div>
+        <div class="input-box">
+          <label for="phone">Cuota inicial:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+        </div>
+        <div class="input-box">
+          <label for="city">Cliente:</label>
+          <input type="search" list="cities" name="city" placeholder="Your City">
+          <datalist id="cities">
+            <option value="Bucaramanga"></option>
+          </datalist>
+        </div>
+      </div>
+      <div>
+        <div class="input-box">
+          <label for="dni">Tasa de interes:</label>
+          <input type="text" id="dni" name="dni" placeholder="Your DNI">
+        </div>
+        <div class="input-box">
+          <label for="address">Fecha del credito:</label>
+          <input type="date" id="address" name="address" placeholder="Your Address">
+        </div>
+      </div>
+      <div>
+        <div class="input-box">
+          <label for="dni">Fecha de desembolso:</label>
+          <input type="date" id="dni" name="dni" placeholder="Your DNI">
+        </div>
+        <div class="input-box">
+          <label for="address">Observaciones:</label>
+          <textarea name="observaciones" id="observacioines" cols="20" rows="5" placeholder="Observaciones.."></textarea>
+        </div>
+      </div>
+      <input type="submit" class="save" value="Create Credit">
+    </div>
+  </form>
+</div>
